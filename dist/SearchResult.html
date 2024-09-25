@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Globe Trekker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="home.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <header class="p-3 shadow-3xl">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <div>
+              <svg
+                width="64px"
+                height="64px"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M576 170.666667h-128a42.666667 42.666667 0 0 0-42.666667 42.666666v64a21.333333 21.333333 0 0 0 21.333334 21.333334h21.333333v-85.333334h128v85.333334h21.333333a21.333333 21.333333 0 0 0 21.333334-21.333334v-64a42.666667 42.666667 0 0 0-42.666667-42.666666"
+                    fill="#795548"
+                  ></path>
+                  <path
+                    d="M874.666667 256H149.333333a42.666667 42.666667 0 0 0-42.666666 42.666667v512a42.666667 42.666667 0 0 0 42.666666 42.666666h725.333334a42.666667 42.666667 0 0 0 42.666666-42.666666V298.666667a42.666667 42.666667 0 0 0-42.666666-42.666667"
+                    fill="#FF6700"
+                  ></path>
+                  <path
+                    d="M192 234.666667h64v21.333333H192zM768 234.666667h64v21.333333h-64z"
+                    fill="#78909C"
+                  ></path>
+                  <path
+                    d="M277.333333 256h42.666667v597.333333h-42.666667zM704 256h42.666667v597.333333h-42.666667z"
+                    fill="#D67C05"
+                  ></path>
+                  <path
+                    d="M490.666667 426.666667m-85.333334 0a85.333333 85.333333 0 1 0 170.666667 0 85.333333 85.333333 0 1 0-170.666667 0Z"
+                    fill="#FFECB3"
+                  ></path>
+                  <path
+                    d="M853.333333 607.68L585.514667 746.666667 533.333333 651.029333 801.152 512z"
+                    fill="#FFD180"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="ml-1">
+              <div class="text-xl font-bold leading-none">
+                <span>Globe Trekker</span>
+              </div>
+              <div class="text-sm leading-none">
+                <span><i>see the world, share the wonder</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section
+      class="relative bg-cover bg-center flex items-center"
+      style="background-image: url('images/paris.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <div class="container mx-auto text-center relative z-10">
+        <div class="mx-auto p-6 max-w-sm sm:max-w-lg md:max-w-2xl">
+          <form
+            action="#"
+            method="GET"
+            class="flex items-center bg-white rounded-full overflow-hidden shadow-2xl"
+          >
+            <span class="px-4 py-3">
+              <svg
+                class="text-gray-600 w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-5.2-5.2"
+                ></path>
+                <circle cx="10" cy="10" r="7"></circle>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for a new location"
+              class="py-3 w-full outline-none"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="weather" class="">
+      <div class="px-8 py-4 sm:px-16">
+        <div class="flex">
+          <div>
+            <svg
+              width="22px"
+              height="22px"
+              viewBox="-4 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>location</title>
+                <desc>Created with Sketch Beta.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  sketch:type="MSPage"
+                >
+                  <g
+                    id="Icon-Set-Filled"
+                    sketch:type="MSLayerGroup"
+                    transform="translate(-106.000000, -413.000000)"
+                    fill="#000000"
+                  >
+                    <path
+                      d="M118,422 C116.343,422 115,423.343 115,425 C115,426.657 116.343,428 118,428 C119.657,428 121,426.657 121,425 C121,423.343 119.657,422 118,422 L118,422 Z M118,430 C115.239,430 113,427.762 113,425 C113,422.238 115.239,420 118,420 C120.761,420 123,422.238 123,425 C123,427.762 120.761,430 118,430 L118,430 Z M118,413 C111.373,413 106,418.373 106,425 C106,430.018 116.005,445.011 118,445 C119.964,445.011 130,429.95 130,425 C130,418.373 124.627,413 118,413 L118,413 Z"
+                      id="location"
+                      sketch:type="MSShapeGroup"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <p class="text-2xl sm:text-3xl font-bold ml-2">Paris, France</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold mt-7">Current Weather Conditions</h2>
+          <div class="p-2 rounded-xl" style="background-color: #fc6700">
+            <div
+              class="relative bg-cover bg-center flex items-center justify-between gap-8 rounded lg p-8 shadow-2xl"
+              style="background-image: url('images/weather-img.jpg')"
+            >
+              <div class="absolute inset-0 bg-black opacity-50"></div>
+
+              <div class="flex flex-col gap-2 text-white relative">
+                <span class="text-2xl sm:text-3xl font-bold">Cloudy</span>
+                <div class="flex mt-6 gap-10">
+                  <span class="text-6xl sm:text-8xl font-bold">27&deg;</span>
+                  <div class="flex flex-col gap-2">
+                    <span class="text-2xl sm:text-3xl font-bold"
+                      >Sunday, 9 December</span
+                    >
+                    <span class="text-2xl sm:text-3xl font-bold">Paris</span>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <svg
+                  width="150px"
+                  height="150px"
+                  viewBox="0 0 36 36"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--twemoji"
+                  preserveAspectRatio="xMidYMid meet"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill="#fc6700"
+                      d="M16 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm18 14s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 16s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm5.121-8.707s1.414 1.414 0 2.828s-2.828 0-2.828 0L4.878 8.708s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm20.587 2.828s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414zm-21 21s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414z"
+                    ></path>
+                    <circle fill="#fc6700" cx="18" cy="18" r="10"></circle>
+                    <path
+                      fill="#E1E8ED"
+                      d="M29.777 23.2c-.642 0-1.26.1-1.843.285c-.688-2.028-2.56-3.485-4.767-3.485c-2.368 0-4.35 1.678-4.899 3.937a3.407 3.407 0 0 0-2.101-.736c-1.933 0-3.5 1.611-3.5 3.6c0 .483.096.941.264 1.363A3.715 3.715 0 0 0 11.889 28C9.741 28 8 29.791 8 32s1.741 4 3.889 4h17.889C33.214 36 36 33.136 36 29.6c0-3.535-2.786-6.4-6.223-6.4z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================================================================== -->
+    <section id="places" class="flex justify-center">
+      <div class="container px-8 sm:px-16 py-4 sm:py-6">
+        <h2 class="text-xl font-bold mb-1">Fun places to go</h2>
+
+        <div class="carousel">
+          <!-- Card 1 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/paris.jpg"
+              alt="Paris, France"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Paris, France</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/berlin.jpg"
+              alt="Berlin, Germany"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Berlin, Germany</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/nyc.jpg"
+              alt="New York City, USA"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">New York City, USA</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/tokyo.jpg"
+              alt="Tokyo, Japan"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Tokyo, Japan</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <section id="places" class="flex justify-center">
+      <div class="container px-8 sm:px-16 py-4 sm:py-6">
+        <h2 class="text-xl font-bold mb-1">Places to Eat</h2>
+
+        <div class="carousel">
+          <!-- Card 1 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/paris.jpg"
+              alt="Paris, France"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Paris, France</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/berlin.jpg"
+              alt="Berlin, Germany"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Berlin, Germany</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/nyc.jpg"
+              alt="New York City, USA"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">New York City, USA</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/tokyo.jpg"
+              alt="Tokyo, Japan"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Tokyo, Japan</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+
+    <section id="places" class="flex justify-center">
+      <div class="container px-8 sm:px-16 py-4 sm:py-6">
+        <h2 class="text-xl font-bold mb-1">Events in the area</h2>
+
+        <div class="carousel">
+          <!-- Card 1 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/paris.jpg"
+              alt="Paris, France"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Paris, France</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/berlin.jpg"
+              alt="Berlin, Germany"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Berlin, Germany</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/nyc.jpg"
+              alt="New York City, USA"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">New York City, USA</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/tokyo.jpg"
+              alt="Tokyo, Japan"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Tokyo, Japan</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="category-image bg-white rounded-lg overflow-hidden shadow-md"
+            onclick="openDrawer('Paris, France', 'The Eiffel Tower', 'About Paris', 'Location Title', 'Map Image URL')"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="category-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drawer -->
+    <div id="drawer" class="drawer">
+      <div class="drawer-content">
+        <div class="drawer-close" onclick="closeDrawer()">Close &#10006;</div>
+        <div class="carousel">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img
+              src="images/paris.jpg"
+              alt="Paris, France"
+              class="w-full h-40 object-cover object-center"
+            />
+          </div>
+        </div>
+        <p class="text-lg font-bold mt-4">The Eiffel Tower, Paris, France</p>
+        <p>About Paris</p>
+        <p class="text-lg font-bold mt-4">Location Title</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991441025305!2d2.2919063761632845!3d48.85837360070802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sng!4v1702318354480!5m2!1sen!2sng"
+          width="200"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- ======================================================================================= -->
+    <script>
+      function openDrawer(
+        location,
+        label,
+        description,
+        locationTitle,
+        mapImageUrl
+      ) {
+        document.querySelector(".drawer-content").innerHTML = `
+        <div class="drawer-close" onclick="closeDrawer()">Close &#10006;</div>
+        <div class="carousel">
+          <div class="bg-white rounded-lg overflow-hidden shadow-md">
+            <img src="images/paris.jpg" alt="Paris, France" class="w-full h-40 object-cover object-center">
+          </div>
+        
+        </div>
+        <p class="text-lg font-bold mt-4">${label}, ${location}</p>
+        <p>${description}</p>
+        <p class="text-lg font-bold mt-4">${locationTitle}</p>
+        <div class="rounded-lg w=full">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991441025305!2d2.2919063761632845!3d48.85837360070802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sng!4v1702318354480!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      `;
+
+        // Show the drawer
+        document.getElementById("drawer").style.display = "block";
+      }
+
+      function closeDrawer() {
+        // Hide the drawer
+        document.getElementById("drawer").style.display = "none";
+      }
+    </script>
+
+    <section>
+      <footer class="bg-orange-500 text-white py-4">
+        <div class="container pl-4">
+          <p>&copy; 2023 Globe Trekker. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

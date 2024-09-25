@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Globe Trekker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="home.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="header">
+      <header class="p-3 shadow-3xl">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <div>
+              <svg
+                width="64px"
+                height="64px"
+                viewBox="0 0 1024 1024"
+                class="icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M576 170.666667h-128a42.666667 42.666667 0 0 0-42.666667 42.666666v64a21.333333 21.333333 0 0 0 21.333334 21.333334h21.333333v-85.333334h128v85.333334h21.333333a21.333333 21.333333 0 0 0 21.333334-21.333334v-64a42.666667 42.666667 0 0 0-42.666667-42.666666"
+                    fill="#795548"
+                  ></path>
+                  <path
+                    d="M874.666667 256H149.333333a42.666667 42.666667 0 0 0-42.666666 42.666667v512a42.666667 42.666667 0 0 0 42.666666 42.666666h725.333334a42.666667 42.666667 0 0 0 42.666666-42.666666V298.666667a42.666667 42.666667 0 0 0-42.666666-42.666667"
+                    fill="#FF6700"
+                  ></path>
+                  <path
+                    d="M192 234.666667h64v21.333333H192zM768 234.666667h64v21.333333h-64z"
+                    fill="#78909C"
+                  ></path>
+                  <path
+                    d="M277.333333 256h42.666667v597.333333h-42.666667zM704 256h42.666667v597.333333h-42.666667z"
+                    fill="#D67C05"
+                  ></path>
+                  <path
+                    d="M490.666667 426.666667m-85.333334 0a85.333333 85.333333 0 1 0 170.666667 0 85.333333 85.333333 0 1 0-170.666667 0Z"
+                    fill="#FFECB3"
+                  ></path>
+                  <path
+                    d="M853.333333 607.68L585.514667 746.666667 533.333333 651.029333 801.152 512z"
+                    fill="#FFD180"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="ml-1">
+              <div class="text-xl font-bold leading-none">
+                <span>Globe Trekker</span>
+              </div>
+              <div class="text-sm leading-none">
+                <span><i>see the world, share the wonder</i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:flex items-center">
+            <a href="./SearchResult.html">
+              <button
+              class="hidden lg:inline-block text-white px-4 py-2 rounded-lg button-50"
+            >
+              Get started
+            </button>
+            </a>
+
+            <!-- Hamburger Icon -->
+            <button id="toggleButton" class="lg:hidden focus:outline-none">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="#fc6700"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+
+            <div
+              id="menu"
+              class="z-40 lg:hidden absolute top-16 right-4 bg-white p-4 rounded-md hidden"
+            >
+              <button class="text-white px-4 py-2 rounded-lg shadow-xl">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section
+      id="hero"
+      class="relative bg-cover bg-center flex items-center"
+      style="background-image: url('images/hero-img.jpg')"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <div class="container mx-auto text-center relative z-10">
+        <h1 class="text-4xl lg:text-6xl text-white font-bold mb-6">
+          Destination?
+        </h1>
+        <div class="mx-auto p-6 max-w-sm sm:max-w-lg md:max-w-2xl">
+          <form
+            action="#"
+            method="GET"
+            class="flex items-center bg-white rounded-full overflow-hidden shadow-2xl"
+          >
+            <span class="px-4 py-3">
+              <svg
+                class="text-gray-600 w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-5.2-5.2"
+                ></path>
+                <circle cx="10" cy="10" r="7"></circle>
+              </svg>
+            </span>
+            <input
+              type="text"
+              placeholder="Search for a place"
+              class="py-3 w-full outline-none"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================================= -->
+
+    <section id="places" class="flex justify-center">
+      <div class="container mx-auto p-8 sm:p-16 mt-8">
+        <h2 class="text-3xl font-bold mb-7">Places to Visit</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-10">
+          <!-- Card 1 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/paris.jpg"
+              alt="Paris, France"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Paris, France</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/berlin.jpg"
+              alt="Berlin, Germany"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Berlin, Germany</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/nyc.jpg"
+              alt="New York City, USA"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">New York City, USA</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/tokyo.jpg"
+              alt="Tokyo, Japan"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Tokyo, Japan</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/london.jpg"
+              alt="London, UK"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">London, UK</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/sydney.jpg"
+              alt="Sydney, Australia"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Sydney, Australia</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/rome.jpg"
+              alt="Rome, Italy"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Rome, Italy</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="place-image pop-image bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="images/lagos.jpg"
+              alt="Lagos, Nigeria"
+              class="place-image w-full h-40 object-cover object-center"
+            />
+            <div class="p-4">
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="bg-orange-500 text-white py-4">
+        <div class="container pl-4">
+          <p>&copy; 2023 Globe Trekker. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      // JavaScript to toggle the menu visibility on small screens
+      const toggleButton = document.getElementById("toggleButton");
+      const menu = document.getElementById("menu");
+
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
